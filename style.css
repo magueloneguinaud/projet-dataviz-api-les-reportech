@@ -38,9 +38,9 @@ h1 {
     height:10%;
     width:10%;    
 } */
+/* 
 
 
-/*
 li {
     float: right;
 }
@@ -55,9 +55,9 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #04AA6D;
+    background-color: #045aaa;
 }
 
 .active {
-    background-color: #04AA6D;
+    background-color: rgb(4, 118, 170);
 } */

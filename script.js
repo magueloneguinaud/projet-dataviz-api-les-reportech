@@ -4,7 +4,7 @@ const fetchNews = async (q)=>{
                 '&lang=fr&' +
                 'max=10&' +
                 'sortBy=popularity&' +
-                'apikey=da794dcb02ec0bd7a8664bba0d6e3bc8';
+                'apikey=e20cc85d9c286864e397e16f1014d2dc';
               
       
       let req = new Request(url)
@@ -21,7 +21,7 @@ const fetchNews = async (q)=>{
           <img src="${item.image}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item.title}</h5>
-            <p class="card-text">${item.content}</p>
+            <p class="card-text">${item.content.slice(0,123)}</p>
             <a href="${item.url}" target="_blank" class="btn btn-primary">Lire l'article</a>
           </div>
           </div>`
@@ -29,6 +29,11 @@ const fetchNews = async (q)=>{
       document.querySelector(".content").innerHTML = str
       }
       fetchNews('tech')
+      search.addEventListener("click", (e)=>{
+        e.preventDefault() 
+        let query = searchInput.value;
+        fetchNews(query)
+      })
       
       
       
