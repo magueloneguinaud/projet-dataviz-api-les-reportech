@@ -4,43 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Les ReporTech'</title>
   </head>
   <body>
+    <span class="gradient skew"><h1 class="logo un-skew"><img src="imagesReporTech'/logoReporTech.png" class="mylogo" alt="logoReporTech" height="10%" width="10%" img-align="left">  Les ReporTech'</a></h1></span>
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Les ReporTech'</a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <button onclick= "fetchNews('tech')" class="nav-link active" aria-current="page" href="#">Accueil</a>
+                  <button onclick= "fetchNews('tech')" class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
                   </li>
               <li class="nav-item">
-                <button onclick= "fetchNews('écologique+tech')" class="nav-link active" aria-current="page" href="#">Ecologie</a>
+                <button onclick= "fetchNews('écologique+tech')" class="nav-link active" aria-current="page" href="#ecologie">Ecologie</a>
               </li>
               <li class="nav-item">
-                <button onclick= "fetchNews('femme+tech')" class="nav-link active" aria-current="page" href="#">Femmes</a>
+                <button onclick= "fetchNews('femme+tech')" class="nav-link active" aria-current="page" href="#femmes">Femmes</a>
               </li>
               <li class="nav-item">
-                <button onclick= "fetchNews('santé+tech')" class="nav-link active" aria-current="page" href="#">Santé</a>
+                <button onclick= "fetchNews('santé+tech')" class="nav-link active" aria-current="page" href="#santé">Santé</a>
               </li>
             </ul>
             <!-- <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
+              <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
           </div>
         </div>
       </nav>
       <!-- Fin Navbar -->
 
+
+
       <!-- Affichage des articles -->
       <div class="container">
-        <h1>Voici vos news</h1>
+        <p class="test">Vos nouvelles du jour</p>
       <div class="row content">
       <div class="card my-4 mx-2" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
