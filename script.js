@@ -1,6 +1,6 @@
 const fetchNews = async (q)=>{
       let url = 'https://gnews.io/api/v4/search?' +
-                'q=' +q+
+                'q=tech+' +q+
                 '&lang=fr&' +
                 'max=10&' +
                 'sortBy=popularity&' +
@@ -21,13 +21,19 @@ const fetchNews = async (q)=>{
           <img src="${item.image}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${item.title}</h5>
-            <p class="card-text">${item.content.slice(0,123)}</p>
+            <p class="card-text">${item.content.slice(0,123)+ '...'}</p>
             <a href="${item.url}" target="_blank" class="btn btn-primary">Lire l'article</a>
           </div>
           </div>`
       }
       document.querySelector(".content").innerHTML = str
       }
+
+      function hideWhenLoading() {
+        document.getElementById("needToBeHidden").style.display = "none";
+      }
+
+      hideWhenLoading()
       fetchNews('tech')
       search.addEventListener("click", (e)=>{
         e.preventDefault() 
