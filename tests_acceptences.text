@@ -1,0 +1,46 @@
+liste des 3 fonctionnalités:
+-Search barre
+-Nav barre
+-Bouton Lire l'article
+
+--La Search Barre--
+User Story:
+En tant qu'utilisateur (préciser le persona),
+Je souhaite pouvoir faire une recherche d'articles par mot clé,
+Afin de retrouver des articles de presse par thème.
+
+Scénario: l'utilisateur recherche des articles par thème.
+Etant donné que je suis dans un rôle utilisateur
+Lorsque je suis sur la page d'accueil, 
+Le système me montre la search barre dans le coin haut gauche de l'écran
+Lorsque je remplis le champ recherche par un mot clé
+Et que je clique sur "La petite loupe" ou entrer de mon clavier
+Le système affiche tous les articles dans le corps de la page correspondant au mot clé+le mot "Tech"
+Chaque article trouvé est inséré dans un encadré
+
+--La Nav Barre--
+User Story:
+En tant qu'utilisateur (préciser le persona),
+Je souhaite pouvoir naviguer facilement dans les 3 thèmes (Santé, Femmes, Ecologie)
+Afin de retrouver facilement les articles de presse correspondants.
+
+Scénario: l'utilisateur affiche des articles en fonction de 3 thèmes qui lui sont proposés.
+Etant donné que je suis dans un rôle utilisateur,
+Lorsque je suis sur la page d'accueil, 
+Le système me montre une nav barre en haut de façon horizontale avec 3 thèmes (S,F,E)+un onglet accueil pour avoir tous les articles correspondants à la Tech en générale
+Et je clique sur l'onglet 'Santé' ou 'Femmes' ou 'Ecologie' ou 'Accueil'
+Le système affiche les articles correspondants au thème quand je clique dessus
+chaque article trouvé est inséré dans un encadré.
+
+--Bouton 'Lire l'article'--
+User Story: 
+En tant qu'utilisateur,
+Je souhaite pouvoir cliquer sur un bouton,
+Afin de pouvoir ouvrir la l'article dans une autre page et lire l'article.
+
+Scénario: L'utilisateur clique sur un bouton pour lire l'article.
+Etant donné que je suis dans un rôle utilisateur,
+Lorsque je suis dans la page d'accueil,
+Le système me montre une selection d'articles dans le corps de la page,
+Et je clique sur un bouton 'Lire l'article'
+Le système ouvre l'article dans une nouvelle page. 
